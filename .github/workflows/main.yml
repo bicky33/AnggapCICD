@@ -19,14 +19,9 @@ jobs:
       run: dotnet restore
     - name: Build Api
       run: |
-        cd AnggapSajaApi
+        cd AnggapSajaAPI
         dotnet build --configuration Release --no-restore
-  testing:
-    name: testing AnggapSajaAPi
-    runs-on: ubuntu-latest
-    needs: [build_api]
-    steps:
-      - name:  Do testing
-        run: |
-          cd AnggapSajaTest
-          dotnet test --no-restore --verbosity normal
+    - name:  Do testing
+      run: |
+        cd AnggapSajaTest
+        dotnet test --no-restore --verbosity normal
