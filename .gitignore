@@ -3,5 +3,9 @@
 ################################################################################
 
 /.vs/TestCICD
+
 /AnggapSajaTest/obj
+/AnggapSajaTest/bin
+
 /AnggapSajaAPI/obj
+/AnggapSajaAPI/bin
